@@ -158,13 +158,85 @@ Explanation:
     g-1
     s-1
 Here ‘o’ occurs maximum number of time, so return o3.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+13) Permutations of a String
+Find number of possible palindrome from the permutations of a given String. A permutation, also called an “arrangement number” or “order,” is a rearrangement of the elements of an ordered list S into a one-to-one correspondence with S itself. A string of length n has n! Permutation.
+Example 1:
+Input: ABC
+Output: 0
+Explanation:
+Permutations for the given string: ABC ACB BAC BCA CBA CAB
+The permutated strings does not have palindrome, so the output is 0
+Example 1:
+Input: AAD
+Output: 2
+Explanation:
+Permutations for the given string: AAD ADA AAD ADA DAA DAA
+The permutated strings having two palindrome such as ADA, ADA, so the output is 2
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+14) Word Encryption
+Anand has created a document which contains some personal information. He does not want others to understand the information contained in the document. So he plans to encrypt the information using an algorithm as given below.
+1.       Encrypt the information in words
+2.       The adjacent odd words are encrypted as below
+a.       Only even positions are interchanged
+b.       The interchange process happens until characters available for interchange
+      Input words: first second third fourth
+      Encrypted words:  fhrrt second  tiisd fourth
+3.       If a word does not have the adjacent odd word then take immediate word which is present at right side, if right-side word is not available then take immediate left side word
+4.       If a word contains other than character, then do not encrypt that character
+Example1:
+      Input words: first second third fourth
+      Encrypted words:  fhrrt second  tiisd fourth
+      Explanation:
+                Words and position
+                                first -1
+                                second -2
+                                third -3
+                                fourth -4
+                Odd position adjacent words are 1 and 3: first third
+                Encrypt these two words by interchanging even position:   fhrrt  tiisd       
+Example2:
+      Input words: java is an object oriented language
+      Encrypted words: jnva is aa object oaignaee   lrneutgd
+   Explanation:
+                Here the word oriented does not have adjacent odd position word so encrypt with the immediate word which in available at right side.
+Use the following method to implement above mentioned concept.
+Public String encryptword(String message)
+Ø  Where message is the input provided by the user and return the encrypted string.
+Ø  If string contains less than two words then return “NOT ENCRYPTED”;
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+15) Generate the PIN number
 
+Bays Bank has launched smart lockers for all customers. The bank has decided to generate a Passcode automatically based on the customer's name, following these updated constraints:
+Passcode must contain six characters.
+1.The first character is the length of the customer’s name.
+2.The next two characters are the third and fourth letters of the customer’s name.
+If the name is shorter than 4 characters, use "X" in place of missing characters.
+3.The next one character should be the most frequently occurring character in the string. 
+  If multiple characters have the highest frequency, use the one that appears first in the string and also If there is no frequently occurring character, use "Y" in the place.
+4.The last two characters are the reverse of the last two characters of the name.
+5.All characters must be in uppercase. 
+
+Example 
+Input : 
+ramkumar
+Output :
+8MKRRA
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+16)Word Encryption
 
-
-
+Virat has created a document which contains some personal information. He does not want repeated characters in his document, he decided to remove the repeating characters in every word.  So, try to create a code in java and help him to implement the above task and also print no. of word which does not have duplicate characters.
+Note : If there is no duplicate character, Print "NIL".
+  Example 1 : 
+    Input : Programming Skill Development
+   Output : Progamin Skil Devlopmnt
+            NIL      
+Example 2 : 
+    Input : We Like Java
+   Output : We Like Jav
+            2  
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
