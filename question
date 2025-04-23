@@ -1,0 +1,170 @@
+1)  Generate Following pattern
+Input : 4
+Output :
+4
+3 3
+2 2 2
+1 1 1 1
+------------------------------------------------------------------------------------------
+2)  Given an array of integer elements. Elements can appear two or more times. Find and display the element which appears only once.
+Note : If there is no elements only once then print "NIL".
+Example
+Input : 7
+0 1 1 2 2 2 3
+Output : 0 3
+------------------------------------------------------------------------------------------
+3)A message containing letters from A-Z is being encoded to numbers using the following mapping:
+‘A’ – 1
+‘B’ – 2
+‘Z’ – 26
+Given an encoded message containing digits, determine the total number of ways to decode it.
+Example 1,
+Input: 12
+Output: 2
+Explanation:
+                Given encoded message “12″, it could be decoded as “AB” (1 2) or “L” (12).
+The number of ways decoding “12″ is 2.
+------------------------------------------------------------------------------------------
+4)Sum of Digits
+Given a string, return the sum of the digits 0-9 that appear in the string, ignoring all other characters. A number is a series of 1 or more digit 
+chars in a row. Return 0 if there are no digits in the string.
+Create a function sumDigits to perform sum, prototype of the function is given below
+int sumDigits(String input1)
+ The function sumDigits shoud return the sum of digits.
+Example 1:
+    Input1: aa1bc2d3
+    Output: 6
+  Explanation: The string contains three digits such as 1,2 and 3, sum of the digits 6
+Example 2:
+    Input1: Chocolate
+    Output: 0
+Explanation: The string does not contains any digits, sum of the digits 0
+Example 3:
+    Input1: aa11b33
+    Output: 44
+Explanation: The string contains two digits such as 11 and 33, sum of the digits 44
+------------------------------------------------------------------------------------------
+5)Sum of Sums of Digits in Cyclic Order
+Alex has been asked to do an assignment on sums of digits of a number. The assignment requires Alex to find the sum of sums of digits of a given number, as per the method mentioned below.
+If the given number is 582109, the sum of sums of digits will be calculated as=(5)+(5+8)+(5+8+2)+ +(5+8+2+1) +(5+8+2+1+0) +(5+8+2+1+0+9)
+=5+13+15+16+16+25
+=90
+Assumptions: For the assignment let us assume that the given number will always contain more than 1 digit i.e. the given number will always be>9
+------------------------------------------------------------------------------------------
+6)Replace every element with the next greatest
+Given an array of integers, replace every element with the next greatest element on the right side in the array. Replace last element with 0 as there no element on the right side of it.
+Example:
+Input array:
+6
+6 7 4 3 5 2 
+Output: 7 5 5 5 2 0
+------------------------------------------------------------------------------------------
+7)Words ordering
+John wants to learn alphabet ordering. He was given a task of ordering the alphabets within a word in a given string and also arrange words based on its maximum to minimum length. If more than one word have same length, then arrange words based on first letter in alphabetical order. If any of the word contains other than character, then place at end of the word. Write a program to help john to order it.
+Note: Assume the minimum word size is two, each word contains at least one character and first character in each word should be uppercase (other characters should be lower case).
+Example 1:
+Sample Input: THE PRICE OF BREAD IN RS
+Sample Output: CEIPER ABDER EHT FO IN RS
+------------------------------------------------------------------------------------------
+8)Word Encryption
+Virat has created a document which contains some personal information. He does not want repeated characters in his document, he decided to remove the repeating characters in every word.  So, try to create a code in java and help him to remove repeated characters.
+Example1:
+   Input : wipro technologies
+Output :  wipro technolgis
+      Explanation:
+                wipro – does not have repeated character
+                technologies - there are two repeating character such as e and o, so remove it.
+               After removing repeated characters return the resulting string: wipro technolgis
+Example2:
+      Input words: java is an object oriented languagea
+      Encrypted words: jav is an object orientd langue
+              java- a is repeated once
+is – does not have repeated character
+an – does not have repeated character
+object – does not have repeated character
+oriented – e is repeated once
+languagea – repeating characters are a and g
+               After removing repeated characters return the resulting string:
+                                                              jav is an object orientd langue
+If all the words are not having repeated characters in the given string, then return
+ “CHARACTER REPEATION 0”
+Use the following method to implement above mentioned concept.
+Public String removeRepeation(String message)
+Ø  Where message is the input provided by the user and return the resulting string.
+Ø  If string contains less than two words then return “NOT A VALID STRING”;
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+9)Generate following pattern
+Input : 5
+Output :
+5 4 3 2 1
+5 4 3 2
+5 4 3
+5 4
+5
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+10)Complete String
+Given a string as input, find whether the given string is complete string or not. Complete string contains characters from a to z at least once.
+If a given String is Complete string, then print yes its a complete string, else its not a complete string
+Example1:
+               Input: the quick brown fox jumps over the lazy dog
+               Output: yes its a complete string
+Explanation:
+Here the string contains all the alphabets.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+11) Maggi is a good IQ person. She was able do to arithmetic calculation quickly. Arab check maggis' IQ by playing a game. Arab gave an array of N elements and tell maggi to check if it is possible to obtain a value S, by choosing some elements of the array and adding them.
+Input:
+First line has N, the number of elements in array.
+Next lines contains N integers denoting the elements of the array.
+Last Value contains a single integer denoting S.
+Output:
+For each test case, print "YES" if S can be obtained by choosing some elements of the array and adding them. Otherwise Print "NO".
+Note: Don't use 0 at any place.
+
+
+TestCase 1
+Command Line Input
+Runtime Line Input
+5
+3 2 4 7 -1
+8
+Output
+YES
+Explanation : 
+   7, 2,  -1 = 8
+  3, 2, 4, -1 = 8
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+12) Maximum occurrence of a Character
+
+Find the number of occurrence of each character(including duplicate characters) in a given string and return the maximum number of occurrence character and its occurrence. Ignore cases while finding number of occurrence of each character.
+
+Assume the character sequence a,b…….z. If more than one character occurs maximum number of time, then choose which occurs first in the given string and return the result.
+
+Example1:
+      Input1: Wipro Technologies
+      Output1: o3
+Explanation:
+    w-1
+    i-2
+    p-1
+    r-1
+    o-3
+    t-1
+    e-2
+    c-1
+    h-1
+    n-1
+    l-1
+    g-1
+    s-1
+Here ‘o’ occurs maximum number of time, so return o3.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
